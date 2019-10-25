@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1BB0AF22FA95B300094784 /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BB0AE22FA95B300094784 /* FirstDetailView.swift */; };
 		CE61989522F9293A0042342F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61989422F9293A0042342F /* AppDelegate.swift */; };
 		CE61989722F9293A0042342F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61989622F9293A0042342F /* SceneDelegate.swift */; };
 		CE61989922F9293A0042342F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61989822F9293A0042342F /* ContentView.swift */; };
 		CE61989B22F9293C0042342F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE61989A22F9293C0042342F /* Assets.xcassets */; };
 		CE61989E22F9293C0042342F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE61989D22F9293C0042342F /* Preview Assets.xcassets */; };
 		CE6198A122F9293C0042342F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE61989F22F9293C0042342F /* LaunchScreen.storyboard */; };
+		CECE7DE5230FE3F700C66F61 /* LiveDemoLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = CECE7DE4230FE3F700C66F61 /* LiveDemoLibrary */; };
+		CED6D4D822F93C7A0082E8DF /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6D4D722F93C7A0082E8DF /* FirstView.swift */; };
+		CED6D4DA22F9509E0082E8DF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6D4D922F9509E0082E8DF /* ActivityIndicator.swift */; };
+		CED6D4DC22F956A10082E8DF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6D4DB22F956A10082E8DF /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE1BB0AE22FA95B300094784 /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
 		CE61989122F9293A0042342F /* SwiftUIDemoWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemoWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE61989422F9293A0042342F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE61989622F9293A0042342F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,11 @@
 		CE61989D22F9293C0042342F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE6198A022F9293C0042342F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE6198A222F9293C0042342F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE61AF6F236194BB00DB1F52 /* SwiftUIDemoWork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIDemoWork.entitlements; sourceTree = "<group>"; };
+		CECE7DE2230FE11800C66F61 /* LiveDemoLibrary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LiveDemoLibrary; path = ../LiveDemoLibrary; sourceTree = "<group>"; };
+		CED6D4D722F93C7A0082E8DF /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		CED6D4D922F9509E0082E8DF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		CED6D4DB22F956A10082E8DF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECE7DE5230FE3F700C66F61 /* LiveDemoLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +52,10 @@
 		CE61988822F9293A0042342F = {
 			isa = PBXGroup;
 			children = (
+				CECE7DE2230FE11800C66F61 /* LiveDemoLibrary */,
 				CE61989322F9293A0042342F /* SwiftUIDemoWork */,
 				CE61989222F9293A0042342F /* Products */,
+				CECE7DE3230FE3F700C66F61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +70,14 @@
 		CE61989322F9293A0042342F /* SwiftUIDemoWork */ = {
 			isa = PBXGroup;
 			children = (
+				CE61AF6F236194BB00DB1F52 /* SwiftUIDemoWork.entitlements */,
 				CE61989422F9293A0042342F /* AppDelegate.swift */,
 				CE61989622F9293A0042342F /* SceneDelegate.swift */,
 				CE61989822F9293A0042342F /* ContentView.swift */,
+				CED6D4D722F93C7A0082E8DF /* FirstView.swift */,
+				CE1BB0AE22FA95B300094784 /* FirstDetailView.swift */,
+				CED6D4D922F9509E0082E8DF /* ActivityIndicator.swift */,
+				CED6D4DB22F956A10082E8DF /* LoadingView.swift */,
 				CE61989A22F9293C0042342F /* Assets.xcassets */,
 				CE61989F22F9293C0042342F /* LaunchScreen.storyboard */,
 				CE6198A222F9293C0042342F /* Info.plist */,
@@ -73,6 +92,13 @@
 				CE61989D22F9293C0042342F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CECE7DE3230FE3F700C66F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +117,9 @@
 			dependencies = (
 			);
 			name = SwiftUIDemoWork;
+			packageProductDependencies = (
+				CECE7DE4230FE3F700C66F61 /* LiveDemoLibrary */,
+			);
 			productName = SwiftUIDemoWork;
 			productReference = CE61989122F9293A0042342F /* SwiftUIDemoWork.app */;
 			productType = "com.apple.product-type.application";
@@ -147,8 +176,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE61989522F9293A0042342F /* AppDelegate.swift in Sources */,
+				CED6D4DA22F9509E0082E8DF /* ActivityIndicator.swift in Sources */,
+				CED6D4D822F93C7A0082E8DF /* FirstView.swift in Sources */,
 				CE61989722F9293A0042342F /* SceneDelegate.swift in Sources */,
 				CE61989922F9293A0042342F /* ContentView.swift in Sources */,
+				CE1BB0AF22FA95B300094784 /* FirstDetailView.swift in Sources */,
+				CED6D4DC22F956A10082E8DF /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +317,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIDemoWork/SwiftUIDemoWork.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "SwiftUIDemoWork/Preview\\ Content";
 				DEVELOPMENT_TEAM = 8DGW4X7477;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.puhui.SwiftUIDemoWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +340,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIDemoWork/SwiftUIDemoWork.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "SwiftUIDemoWork/Preview\\ Content";
 				DEVELOPMENT_TEAM = 8DGW4X7477;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +353,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.puhui.SwiftUIDemoWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -342,6 +381,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CECE7DE4230FE3F700C66F61 /* LiveDemoLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LiveDemoLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE61988922F9293A0042342F /* Project object */;
 }
